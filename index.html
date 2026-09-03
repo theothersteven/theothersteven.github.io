@@ -41,9 +41,18 @@
     <title>Steven Yin</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="top">
     <main class="shell">
-      <section class="intro" aria-labelledby="page-title">
+      <header class="site-header">
+        <a class="site-home" href="#top">Steven Yin</a>
+        <nav class="site-nav" aria-label="Page sections">
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#teaching">Teaching</a>
+        </nav>
+      </header>
+
+      <section class="intro" id="about" aria-labelledby="page-title">
         <p class="eyebrow">Hello, I’m</p>
         <div class="intro-copy">
           <h1 id="page-title">Steven Yin</h1>
@@ -57,74 +66,76 @@
         </div>
       </section>
 
-      <section class="work" aria-label="Selected work">
-        <article class="entry">
-          <p class="entry-label">
-            <span>Blog</span>
-            <span aria-hidden="true">·</span>
-            <time datetime="2026-09-01">2026.09.01</time>
-          </p>
-          <a
-            class="entry-link"
-            href="https://theothersteven.github.io/modeling-token-demand/"
-          >
-            <span class="entry-copy">
-              <span class="entry-title">Modeling Token Demand</span>
-              <span class="entry-description">
-                A research note on AI adoption, token economics, and the value
-                of human attention.
+      <section class="collection" id="blog" aria-labelledby="blog-heading">
+        <h2 class="section-title" id="blog-heading">Blog</h2>
+        <div class="entry-list">
+          <article class="entry">
+            <p class="entry-label">
+              <time datetime="2026-09-01">2026.09.01</time>
+            </p>
+            <a
+              class="entry-link"
+              href="https://theothersteven.github.io/modeling-token-demand/"
+            >
+              <span class="entry-copy">
+                <span class="entry-title">Modeling Token Demand</span>
+                <span class="entry-description">
+                  A research note on AI adoption, token economics, and the
+                  value of human attention.
+                </span>
               </span>
-            </span>
-            <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-        </article>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
 
-        <article class="entry">
-          <p class="entry-label">
-            <span>Blog</span>
-            <span aria-hidden="true">·</span>
-            <time datetime="2025-07-19">2025.07.19</time>
-          </p>
-          <a
-            class="entry-link"
-            href="https://syin.bearblog.dev/morality-of-advertising/"
-          >
-            <span class="entry-copy">
-              <span class="entry-title">Morality of Advertising</span>
-              <span class="entry-description">
-                Advertising as a market for attention—and what it might look
-                like in AI assistants.
+          <article class="entry">
+            <p class="entry-label">
+              <time datetime="2025-07-19">2025.07.19</time>
+            </p>
+            <a
+              class="entry-link"
+              href="https://syin.bearblog.dev/morality-of-advertising/"
+            >
+              <span class="entry-copy">
+                <span class="entry-title">Morality of Advertising</span>
+                <span class="entry-description">
+                  Advertising as a market for attention—and what it might look
+                  like in AI assistants.
+                </span>
               </span>
-            </span>
-            <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-        </article>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
 
-        <article class="entry">
-          <p class="entry-label">
-            <span>Blog</span>
-            <span aria-hidden="true">·</span>
-            <time datetime="2025-07-02">2025.07.02</time>
-          </p>
-          <a
-            class="entry-link"
-            href="https://syin.bearblog.dev/intelligence-futures/"
-          >
-            <span class="entry-copy">
-              <span class="entry-title">Intelligence Futures</span>
-              <span class="entry-description">
-                A case for markets that price and hedge compute, intelligence,
-                and AI progress.
+          <article class="entry">
+            <p class="entry-label">
+              <time datetime="2025-07-02">2025.07.02</time>
+            </p>
+            <a
+              class="entry-link"
+              href="https://syin.bearblog.dev/intelligence-futures/"
+            >
+              <span class="entry-copy">
+                <span class="entry-title">Intelligence Futures</span>
+                <span class="entry-description">
+                  A case for markets that price and hedge compute,
+                  intelligence, and AI progress.
+                </span>
               </span>
-            </span>
-            <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-        </article>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
 
+      <section
+        class="collection"
+        id="teaching"
+        aria-labelledby="teaching-heading"
+      >
+        <h2 class="section-title" id="teaching-heading">Teaching</h2>
         <article class="entry">
           <p class="entry-label">
-            <span>Teaching</span>
-            <span aria-hidden="true">·</span>
             <span>Fall 2026</span>
           </p>
           <a
