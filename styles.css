@@ -94,8 +94,13 @@ h1 {
 .entry-label {
   padding-top: 0.45rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0 0.5rem;
+  white-space: nowrap;
+}
+
+.entry-label > * {
+  flex-shrink: 0;
 }
 
 .entry-link {
